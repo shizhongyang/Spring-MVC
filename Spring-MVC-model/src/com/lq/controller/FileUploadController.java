@@ -42,7 +42,7 @@ public class FileUploadController {
 		return "success";
 	}
 
-	// ��Ϊ�ҵ�JSP��WEB-INFĿ¼���棬������޷�ֱ�ӷ���
+	//跳转
 	@RequestMapping(value = "/forward")
 	private String forward() {
 		return "index";

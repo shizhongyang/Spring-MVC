@@ -28,12 +28,12 @@ import com.lq.service.UserService;
 
 import antlr.collections.List;
 
-//×¢Èëcontroller
+//×¢ï¿½ï¿½controller
 @Controller
 @RequestMapping("/user")
 public class UserController {
 
-	//×¢Èëservice
+	//×¢ï¿½ï¿½service
 	@Autowired
 	private UserService userService;
 
@@ -41,8 +41,8 @@ public class UserController {
 	private CustomerService customerService;
 	
 	
-//	@Autowired
-//	private BookService bookService;
+	//@Autowired
+	//private BookService bookService;
 	
 	
 	@Autowired
@@ -94,7 +94,7 @@ public class UserController {
 		try {
 			System.out.println("------"+reader.getMeno());
 			if (errors.getErrorCount()>0) {
-				System.out.println("³ö´íÁË");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 				for(FieldError error:errors.getFieldErrors()){
 					System.out.println(error.getField() + ":" + error.getDefaultMessage());
 				}
