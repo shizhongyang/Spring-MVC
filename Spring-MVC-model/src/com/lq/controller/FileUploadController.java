@@ -18,6 +18,11 @@ import com.lq.utils.CreateFileUtil;
 @RequestMapping("/file")
 public class FileUploadController {
 
+	
+	
+	
+	
+	
 	@RequestMapping(value = "/upload", method = RequestMethod.POST)
 	private String fildUpload(Users users, @RequestParam(value = "file", required = false) MultipartFile file,
 			HttpServletRequest request) throws Exception {
